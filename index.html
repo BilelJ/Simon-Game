@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Simon&reg; game</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<meta name="description" content="The Simon&reg; Game, a FreeCodeCamp Project">
+	<meta name="keywords" content="Pomodoro Clock,Clock,Pomodoro,Timer">
+	<meta name="author" content="Bilel Jribi">
+	<meta property="og:title" content="The Simon&reg; Game, a FreeCodeCamp Project" />
+	<meta property="og:description" content="Developed by Bilel Jribi" />
+	<meta property="og:image" content="src.png" />
+</head>
+<body>
+	<audio preload="auto">
+  <source src="simonSound2.mp3" type="audio/mp3">
+	</audio>
+	<audio preload="auto">
+  <source src="simonSound1.mp3" type="audio/mp3">
+	</audio>
+	<audio preload="auto">
+  <source src="simonSound3.mp3" type="audio/mp3">
+	</audio>
+	<audio preload="auto">
+  <source src="simonSound4.mp3" type="audio/mp3">
+	</audio>
+	<audio preload="auto">
+  <source src="error.mp3" type="audio/mp3">
+	</audio>
+<input style="display: none" type="text" id="simon">
+<input style="display: none" type="text" id="user">
+		<h1>The Simon&reg; Game</h1>
+	<div class="container">
+		<div class="box green" id="box0"></div>
+		<div class="box red active" id="box1"></div>
+		<div class="box yellow" id="box3"></div>
+		<div class="box blue" id="box2"></div>
+		<div class="panel">
+			<h2>Simon &reg;</h2>
+			<div class="cp" ><img alt="Power icon" src="power.png" height="15" width="15">
+			<div id="start" class="start"></div>
+			<h5>Strict</h5><div id="strict" class="strict"></div>
+			</div>
+			<h5>Level</h5><input type="text" id="lvl" disabled="disabled">
+		</div>
+	</div>
+	<p>Developed by <a href="https://www.bileljribi.tn/">Bilel Jribi</a></p>
+<script src="script.js"></script>
+</body>
+</html>
